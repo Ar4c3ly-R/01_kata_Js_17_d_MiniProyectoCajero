@@ -1,0 +1,126 @@
+.main{
+    display: grid;
+    height: 100vh;
+    display: ;
+}
+.inicio{
+    background-color: rgb(2, 31, 59);
+    border: 1px solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.acciones{
+    background-color: rgb(2, 31, 59);
+    padding: 60px;
+    display: none;
+}
+#cajero{
+    margin-bottom: 60px;
+    color: aliceblue;
+}
+#usuario{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#contrasenia{
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+.button{
+    border-radius: 6px;
+}
+#img{
+    padding-right: 70px;
+}
+.img{
+    height: 70px;
+    margin-top: 30px;
+    padding-left: 200px;
+}
+#img1{
+    padding-right: 20px;
+}
+#img2{
+    padding-right: 160px;
+}
+#img3{
+    padding-left: 50px;
+}
+.cantidadRetiro{
+    background-color: rgb(255, 146, 146);
+    padding: 100px;
+    display: none;
+}
+#retiro{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#buttonRetiro{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.cantidadDeposito{
+    background-color: rgb(180, 249, 134);
+    padding: 100px;
+    display: none;
+}
+#deposito{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#buttonDeposito{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.pantallaSaldo{
+    background-color: rgb(2, 31, 59);
+    padding: 150px;
+    display: none;
+}
+#buttonSaldo{
+    margin: 20px;
+    margin-left: 200px;
+    width: 150px;
+    border-radius: 6px;
+}
+#buttonSaldoSalida{
+    margin: 20px;
+    width: 150px;
+}
+.pantallaRetiro{
+    background-color: rgb(2, 31, 59);
+    padding: 150px;
+    display: none;
+}
+#buttonMenuPantRet{
+    margin: 20px;
+    width: 200px;
+    
+}
+#buttonSalirPantRet{
+    margin: 20px;
+    margin-top: 10px;
+    width: 200px;
+}
+.pantallaDeposito{
+    background-color: rgb(2, 31, 59);
+    padding: 150px;
+    display: none;
+}
+#buttonMenuPantDep{
+    margin: 20px;
+    width: 200px;
+    
+}
+#buttonSalirPant{
+    margin: 20px;
+    margin-top: 10px;
+    width: 200px;
+}
+

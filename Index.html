@@ -4,11 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini proyecto cajero</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Mini proyecto: Cajero automático</h1>
 
-    <script src="main.js"></script>
+    <main class="main" id="main" >
+        <div class="inicio d-flex justify-content-center flex-column d-flex align-items-center" id="inicio">
+        <h1 id="cajero">CAJERO ATM</h1>
+        <label class="text-white" for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario">
+        <label class="text-white" for="contrasenia" >Contraseña</label>
+        <input type="password" name="contraseña" id="contrasenia">
+        <button onclick="ingresar()">Ingresar</button>
+        </div>
+     </main>
+       
+
+    <div class="acciones" id="acciones">
+        <div class="d-flex justify-content-around">
+        <h2 class="text-white">Hola <span class="text-white" id="nombre-usuario"></span></h2>
+        <button class="button" onclick="consultarSaldo(posicionUsuarioFunciones)">Consultar saldo</button>
+        <button class="button" onclick="retiro()">Hacer un retiro</button>
+        <button class="button" onclick="deposito()">Hacer un depósito</button>
+        <button class="button" onclick="salir()">Salir</button>
+        </div>
+        <div class="d-flex justify-content-end" id="img">
+        <img class="img" id="img1" src="https://cdn-icons-png.flaticon.com/512/2331/2331876.png" alt="">
+        <img class="img" id="img2" src="https://cdn-icons-png.flaticon.com/512/2146/2146261.png" alt="">
+        <img class="img" id="img3" src="https://cdn-icons-png.flaticon.com/512/2040/2040813.png" alt="">
+        <img class="img" id="img4" src="https://cdn-icons-png.flaticon.com/512/714/714932.png" alt="">
+        </div>
+        
+    </div>
+
+    <div class="pantallaSaldo" id="pantallaSaldo">
+    <div >
+        <label class=" text-white" for="cantidadRetirada">El saldo actual en su cuenta es de $<span id="saldoActual"></span>.00</label>
+        <button class="row-cols-1" id="buttonSaldo" onclick="regresoMenu()">Regresar al Menú</button>
+        <button class="button row-cols-2" id="buttonSaldoSalida" onclick="salir()">Salir</button>
+    </div>
+    </div>
+
+    <div class="cantidadRetiro" id="cantidadRetiro">
+    <div class="d-flex justify-content-center flex-column d-flex align-items-center">
+        <label class="row" for="retiro">Cantidad que desea retirar</label>
+        <input class="row" type="text" name="retiro" id="retiro">
+        <button class="row" id="buttonRetiro" onclick="retirar(posicionUsuarioFunciones)">retirar</button>
+    </div>
+    </div>
+
+    <div class="pantallaRetiro" id="pantallaRetiro">
+    <div class="d-flex flex-column d-flex justify-content-center d-flex align-items-center">
+        <label class="text-white" for="cantidadRetirada">La cantidad que desea retirar es de $<span id="cantidadRetirada"></span>.00</label>
+        <label class="text-white" for="cantidadRetirada">Su saldo final es de $<span id="saldoFinalRetiro"></span>.00</label>
+        <button id="buttonMenuPantRet" onclick="regresoMenu()">Regresar al Menú</button>
+        <button id="buttonSalirPantRet" class="button" onclick="salir()">Salir</button>
+    </div>
+    </div>
+
+    <div class="cantidadDeposito" id="cantidadDeposito">
+    <div class="d-flex justify-content-center flex-column d-flex align-items-center">
+        <label class="row" for="deposito">Cantidad que desea depositar</label>
+        <input class="row" type="text" name="deposito" id="deposito">
+        <button class="row" id="buttonDeposito" onclick="depositar(posicionUsuarioFunciones)">Depositar</button>
+    </div>
+    </div>
+
+    <div class="pantallaDeposito" id="pantallaDeposito">
+    <div class="d-flex flex-column d-flex justify-content-center d-flex align-items-center">
+        <label class="text-white " for="cantidadDeposito">La cantidad que desea depositar es de $<span id="cantidadDepositar"> </span>.00</label>
+        <label class="text-white " for="cantidadDeposito">Su saldo final es de $<span id="saldoFinalDeposito"></span>.00</label>
+        <button id="buttonMenuPantDep" onclick="regresoMenu()">Regresar al Menú</button>
+        <button id="buttonSalirPantDep" class="button" onclick="salir()">Salir</button>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
